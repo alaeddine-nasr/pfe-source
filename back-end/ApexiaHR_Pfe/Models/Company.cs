@@ -11,7 +11,7 @@ namespace ApexiaHR_Pfe.Models
 {
     using System;
     using System.Collections.Generic;
-
+    
     public partial class Company
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -21,8 +21,8 @@ namespace ApexiaHR_Pfe.Models
             this.TimeSetting = new HashSet<TimeSetting>();
             this.WorkSchedule = new HashSet<WorkSchedule>();
         }
-
-        public Guid CompanyID { get; set; }
+    
+        public int CompanyID { get; set; }
         public string CompanyLegalName { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
@@ -30,9 +30,9 @@ namespace ApexiaHR_Pfe.Models
         public Nullable<int> PostalCode { get; set; }
         public string Country { get; set; }
         public string DateOfFormation { get; set; }
-        public string FiscalYearStart { get; set; }
+        public short FiscalYearStart { get; set; }
         public string PayrollFrequency { get; set; }
-
+    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Department> Department { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

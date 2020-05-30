@@ -37,7 +37,7 @@ namespace ApexiaHR_Pfe.Controllers
 
         // PUT: api/TimeSettings1/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutTimeSetting(Guid id, TimeSetting timeSetting)
+        public IHttpActionResult PutTimeSetting(int id, TimeSetting timeSetting)
         {
             if (!ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace ApexiaHR_Pfe.Controllers
             {
                 return BadRequest(ModelState);
             }
-            timeSetting.TimeSettingID = new Guid();
+            timeSetting.TimeSettingID = new int();
             db.TimeSetting.Add(timeSetting);
             db.SaveChanges();
 
@@ -110,7 +110,7 @@ namespace ApexiaHR_Pfe.Controllers
             base.Dispose(disposing);
         }
 
-        private bool TimeSettingExists(Guid id)
+        private bool TimeSettingExists(int id)
         {
             return db.TimeSetting.Count(e => e.TimeSettingID == id) > 0;
         }

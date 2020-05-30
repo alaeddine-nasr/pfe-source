@@ -2,7 +2,7 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="ProjectDataBaseModelStoreContainer" CdmEntityContainer="ProjectDataBaseEntities">
     <EntitySetMapping Name="Company">
-      <EntityTypeMapping TypeName="ProjectDataBaseModel.Company">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectDataBaseModel.Company)">
         <MappingFragment StoreEntitySet="Company">
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
           <ScalarProperty Name="CompanyLegalName" ColumnName="CompanyLegalName" />
@@ -18,7 +18,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Department">
-      <EntityTypeMapping TypeName="ProjectDataBaseModel.Department">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectDataBaseModel.Department)">
         <MappingFragment StoreEntitySet="Department">
           <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
           <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
@@ -27,7 +27,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Employee">
-      <EntityTypeMapping TypeName="ProjectDataBaseModel.Employee">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectDataBaseModel.Employee)">
         <MappingFragment StoreEntitySet="Employee">
           <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -39,20 +39,20 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TimeSetting">
-      <EntityTypeMapping TypeName="ProjectDataBaseModel.TimeSetting">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectDataBaseModel.TimeSetting)">
         <MappingFragment StoreEntitySet="TimeSetting">
+          <ScalarProperty Name="TimeSettingID" ColumnName="TimeSettingID" />
           <ScalarProperty Name="Attendance" ColumnName="Attendance" />
           <ScalarProperty Name="EmployeeBreak" ColumnName="EmployeeBreak" />
           <ScalarProperty Name="WeekendOnAttendanceSheet" ColumnName="WeekendOnAttendanceSheet" />
           <ScalarProperty Name="MaxLateArrivals" ColumnName="MaxLateArrivals" />
           <ScalarProperty Name="HighlightLateArrivals" ColumnName="HighlightLateArrivals" />
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
-          <ScalarProperty Name="TimeSettingID" ColumnName="TimeSettingID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="WorkDay">
-      <EntityTypeMapping TypeName="ProjectDataBaseModel.WorkDay">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectDataBaseModel.WorkDay)">
         <MappingFragment StoreEntitySet="WorkDay">
           <ScalarProperty Name="WorkDayID" ColumnName="WorkDayID" />
           <ScalarProperty Name="Checkin" ColumnName="Checkin" />
@@ -68,7 +68,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="WorkSchedule">
-      <EntityTypeMapping TypeName="ProjectDataBaseModel.WorkSchedule">
+      <EntityTypeMapping TypeName="IsTypeOf(ProjectDataBaseModel.WorkSchedule)">
         <MappingFragment StoreEntitySet="WorkSchedule">
           <ScalarProperty Name="WorkScheduleID" ColumnName="WorkScheduleID" />
           <ScalarProperty Name="WeekendDays" ColumnName="WeekendDays" />

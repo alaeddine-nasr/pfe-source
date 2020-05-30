@@ -24,7 +24,7 @@ namespace ApexiaHR_Pfe.Controllers
 
         // GET: api/WorkSchedules/5
         [ResponseType(typeof(WorkSchedule))]
-        public IHttpActionResult GetWorkSchedule(Guid id)
+        public IHttpActionResult GetWorkSchedule(int id)
         {
             WorkSchedule workSchedule = db.WorkSchedule.Find(id);
             if (workSchedule == null)
@@ -37,7 +37,7 @@ namespace ApexiaHR_Pfe.Controllers
 
         // PUT: api/WorkSchedules/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutWorkSchedule(Guid id, WorkSchedule workSchedule)
+        public IHttpActionResult PutWorkSchedule(int id, WorkSchedule workSchedule)
         {
             if (!ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace ApexiaHR_Pfe.Controllers
             {
                 return BadRequest(ModelState);
             }
-            workSchedule.WorkScheduleID = new Guid();
+            workSchedule.WorkScheduleID = new int();
             db.WorkSchedule.Add(workSchedule);
             db.SaveChanges();
 
@@ -110,7 +110,7 @@ namespace ApexiaHR_Pfe.Controllers
             base.Dispose(disposing);
         }
 
-        private bool WorkScheduleExists(Guid id)
+        private bool WorkScheduleExists(int id)
         {
             return db.WorkSchedule.Count(e => e.WorkScheduleID == id) > 0;
         }

@@ -37,7 +37,7 @@ namespace ApexiaHR_Pfe.Controllers
 
         // PUT: api/Departments/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutDepartment(Guid id, Department department)
+        public IHttpActionResult PutDepartment(int id, Department department)
         {
             if (!ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace ApexiaHR_Pfe.Controllers
             {
                 return BadRequest(ModelState);
             }
-            department.DepartmentID = new Guid();
+            department.DepartmentID = new int();
             db.Department.Add(department);
             db.SaveChanges();
 
@@ -110,7 +110,7 @@ namespace ApexiaHR_Pfe.Controllers
             base.Dispose(disposing);
         }
 
-        private bool DepartmentExists(Guid id)
+        private bool DepartmentExists(int id)
         {
             return db.Department.Count(e => e.DepartmentID == id) > 0;
         }

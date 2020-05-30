@@ -170,7 +170,7 @@ C:\Users\ziedg\pfe-source\back-end\ApexiaHR_Pfe\bin\System.Web.WebPages.Deployme
 C:\Users\ziedg\pfe-source\back-end\ApexiaHR_Pfe\bin\System.Web.WebPages.Razor.xml
 C:\Users\ziedg\pfe-source\back-end\ApexiaHR_Pfe\bin\Antlr3.Runtime.pdb
 C:\Users\ziedg\pfe-source\back-end\ApexiaHR_Pfe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ziedg\pfe-source\back-end\ApexiaHR_Pfe\obj\Debug\ApexiaHR_Pfe.csprojAssemblyReference.cache
 C:\Users\ziedg\pfe-source\back-end\ApexiaHR_Pfe\obj\Debug\ApexiaHR_Pfe.csproj.CopyComplete
 C:\Users\ziedg\pfe-source\back-end\ApexiaHR_Pfe\obj\Debug\ApexiaHR_Pfe.dll
 C:\Users\ziedg\pfe-source\back-end\ApexiaHR_Pfe\obj\Debug\ApexiaHR_Pfe.pdb
+C:\Users\ziedg\pfe-source\back-end\ApexiaHR_Pfe\obj\Debug\ApexiaHR_Pfe.csprojAssemblyReference.cache

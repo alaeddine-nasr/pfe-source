@@ -14,7 +14,7 @@ namespace ApexiaHR_Pfe.Models
     
     public partial class WorkSchedule
     {
-        public Guid WorkScheduleID { get; set; }
+        public int WorkScheduleID { get; set; }
         public string WeekendDays { get; set; }
         public Nullable<int> HoursPerDay { get; set; }
         public string WeekStarts { get; set; }
@@ -22,8 +22,8 @@ namespace ApexiaHR_Pfe.Models
         public string DayStarts { get; set; }
         public string Breaks { get; set; }
         public string Lunch { get; set; }
-        public Nullable<Guid> DepartmentID { get; set; }
-        public Nullable<Guid> CompanyID { get; set; }
+        public Nullable<int> DepartmentID { get; set; }
+        public Nullable<int> CompanyID { get; set; }
     
         public virtual Company Company { get; set; }
         public virtual Department Department { get; set; }

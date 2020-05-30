@@ -37,7 +37,7 @@ namespace ApexiaHR_Pfe.Controllers
 
         // PUT: api/Employees/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutEmployee(Guid id, Employee employee)
+        public IHttpActionResult PutEmployee(int id, Employee employee)
         {
             if (!ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace ApexiaHR_Pfe.Controllers
             {
                 return BadRequest(ModelState);
             }
-            employee.EmployeeID = new Guid();
+            employee.EmployeeID = new int();
             db.Employee.Add(employee);
             db.SaveChanges();
 
@@ -110,7 +110,7 @@ namespace ApexiaHR_Pfe.Controllers
             base.Dispose(disposing);
         }
 
-        private bool EmployeeExists(Guid id)
+        private bool EmployeeExists(int id)
         {
             return db.Employee.Count(e => e.EmployeeID == id) > 0;
         }

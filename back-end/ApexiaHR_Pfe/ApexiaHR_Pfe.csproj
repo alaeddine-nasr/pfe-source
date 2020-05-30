@@ -222,6 +222,7 @@
       <LastGenOutput>DBmobel.Context.cs</LastGenOutput>
       <DependentUpon>DBmobel.edmx</DependentUpon>
     </Content>
+    <Content Include="Models\DBmobel.edmx.sql" />
     <Content Include="Models\DBmobel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DBmobel.edmx</DependentUpon>
