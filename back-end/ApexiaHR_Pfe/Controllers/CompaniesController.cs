@@ -78,7 +78,7 @@ namespace ApexiaHR_Pfe.Controllers
             {
                 return BadRequest(ModelState);
             }
-
+            company.CompanyID = new Guid();
             db.Company.Add(company);
             db.SaveChanges();
 

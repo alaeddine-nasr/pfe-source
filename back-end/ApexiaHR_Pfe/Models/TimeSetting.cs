@@ -11,7 +11,7 @@ namespace ApexiaHR_Pfe.Models
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class TimeSetting
     {
         public string Attendance { get; set; }
@@ -20,8 +20,8 @@ namespace ApexiaHR_Pfe.Models
         public string MaxLateArrivals { get; set; }
         public string HighlightLateArrivals { get; set; }
         public Nullable<Guid> CompanyID { get; set; }
-        public int TimeSettingID { get; set; }
-    
+        public Guid TimeSettingID { get; set; }
+
         public virtual Company Company { get; set; }
     }
 }
