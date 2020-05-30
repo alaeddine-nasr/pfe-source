@@ -11,10 +11,10 @@ namespace ApexiaHR_Pfe.Models
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class WorkDay
     {
-        public int WorkDayID { get; set; }
+        public Guid WorkDayID { get; set; }
         public string Checkin { get; set; }
         public string Checkout { get; set; }
         public string Breaks { get; set; }
@@ -23,8 +23,8 @@ namespace ApexiaHR_Pfe.Models
         public Nullable<int> OvetimeHours { get; set; }
         public string Comments { get; set; }
         public string Date { get; set; }
-        public int EmployeeID { get; set; }
-    
+        public Guid EmployeeID { get; set; }
+
         public virtual Employee Employee { get; set; }
     }
 }

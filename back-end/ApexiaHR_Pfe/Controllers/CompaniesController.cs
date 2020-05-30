@@ -24,7 +24,7 @@ namespace ApexiaHR_Pfe.Controllers
 
         // GET: api/Companies/5
         [ResponseType(typeof(Company))]
-        public IHttpActionResult GetCompany(int id)
+        public IHttpActionResult GetCompany(Guid id)
         {
             Company company = db.Company.Find(id);
             if (company == null)
@@ -37,7 +37,7 @@ namespace ApexiaHR_Pfe.Controllers
 
         // PUT: api/Companies/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutCompany(int id, Company company)
+        public IHttpActionResult PutCompany(Guid id, Company company)
         {
             if (!ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace ApexiaHR_Pfe.Controllers
 
         // DELETE: api/Companies/5
         [ResponseType(typeof(Company))]
-        public IHttpActionResult DeleteCompany(int id)
+        public IHttpActionResult DeleteCompany(Guid id)
         {
             Company company = db.Company.Find(id);
             if (company == null)
@@ -110,7 +110,7 @@ namespace ApexiaHR_Pfe.Controllers
             base.Dispose(disposing);
         }
 
-        private bool CompanyExists(int id)
+        private bool CompanyExists(Guid id)
         {
             return db.Company.Count(e => e.CompanyID == id) > 0;
         }
