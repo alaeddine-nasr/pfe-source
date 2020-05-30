@@ -1,0 +1,63 @@
+<div class="row ">
+
+
+    <div class="col-md-3 ml-2 " >
+      <div class="  container ml-4" >
+    
+       
+    </div>
+    
+     </div>
+     <div class="container ">
+        <div>
+          <div style="width: 100%;"> 
+
+            <span class="font-weight-bold text-left mt-2 p-3 text-primary ">Company Information </span>
+            <span class="font-weight-bold text-left mt-2 p-3 text-primary " style="margin-left: 15%;">Pay Period: April 1-30 ,2020   </span>
+            <span class="font-weight-bold text-left mt-2 p-3 text-primary "  style="padding-top: 10px; margin-left: 20%;">
+              <select class="mt-3">
+                <option > Calendar view</option>
+                <option>Clock in</option>
+                <option>Timesheet</option>
+               
+                
+              </select>
+            </span>
+           
+            </div>
+
+            <hr class="style1">
+          <full-calendar
+          defaultView="dayGridMonth"
+          [plugins]="calendarPlugins"
+          [weekends]="false"
+          [header]="{
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+          }"
+          [events]="[
+          
+            { title: 'event 1', date: '2020-04-01 22:05'},
+            { title: 'event 2', date: '2020-04-01 09:25' },
+            { title: 'event 3', date: '2020-04-01 11:11' },
+            { title: 'event 4', date: '2020-04-01 15:15' },
+            { title: 'event 2', date: '2020-04-02 16:20' }
+             
+          ]"
+        ></full-calendar>
+
+        </div>
+     
+     
+      </div>
+
+      
+    <div class="col-md-9" >
+       
+       
+
+
+
+</div>
+</div>

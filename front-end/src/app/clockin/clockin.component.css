@@ -1,0 +1,140 @@
+.container  {
+    background-color: white !important;
+   
+   
+   
+   
+   border-radius: 20px;
+   border-style: solid;
+   border-color: #C0FAFC ;
+   border-width: 1.5px;
+    
+    max-width: 1400px;
+    height: max-content;
+    max-height: max-content;
+
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18);
+}
+.container7  {
+    background-color: white !important;
+   
+   
+   
+   
+   border-radius: 20px;
+   border-style: solid;
+   border-color: #C0FAFC ;
+   border-width: 1.5px;
+    
+    max-width: 1400px;
+    height: 1650px;
+    max-height: 1650px;
+
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18);
+}
+.container4  {
+    background-color: white !important;
+   
+   
+   
+   
+   border-radius: 20px;
+   border-style: solid;
+   border-color: #C0FAFC ;
+   border-width: 1.5px;
+    
+   margin: 1%;
+
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18);
+}
+.container6  {
+  
+   
+   
+    background-color: white !important;
+  
+    margin-left: 5%;
+    max-width: 90%;
+    height: max-content;
+    max-height: max-content;
+
+   
+}
+hr.style1{
+    border-top: 3px solid #C0FAFC ;
+    margin-left: 4px;
+    margin-right: 4px;
+    
+}
+
+ .container-1{
+
+    background-color:#E9E3E3 !important;
+   
+    padding: 0 !important ;
+  
+  
+   width: 100px;
+   margin-right: 40px;
+  
+   border-radius: 20px;
+   border-style: solid;
+   border-color: #C0FAFC ;
+   border-width: 1.5px;
+      
+height: 30px;
+
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18);
+ }
+ .container-2{
+
+    background-color:#F9FDC5 !important;
+   
+    padding: 0 !important ;
+  
+  
+   width: 100px;
+   margin-right: 40px;
+  
+   border-radius: 20px;
+   border-style: solid;
+   border-color: #C0FAFC ;
+   border-width: 1.5px;
+      
+height: 30px;
+
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18);
+ }
+ .container-3{
+
+    background-color:#92C7E1 !important;
+   
+    padding: 0 !important ;
+  
+  
+   width: 200px;
+   margin-right: 40px;
+  
+   border-radius: 20px;
+   border-style: solid;
+   border-color: #C0FAFC ;
+   border-width: 1.5px;
+      
+height: 30px;
+
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18);
+ }
+hr.style1{
+    border-top: 3px solid #C0FAFC ;
+    margin-left: 4px;
+    margin-right: 4px;
+    
+}
+
+button{
+    margin-left: 730px;
+}
+
+h4{
+    color:royalblue;
+}

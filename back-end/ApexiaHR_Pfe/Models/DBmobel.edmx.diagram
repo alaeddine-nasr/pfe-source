@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f2997df3ed4a4898bb509cc582e7f6e9" Name="Diagram1">
+        <EntityTypeShape EntityType="ProjectDataBaseModel.Company" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDataBaseModel.Department" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDataBaseModel.Employee" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDataBaseModel.TimeSetting" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDataBaseModel.WorkDay" Width="1.5" PointX="7.5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectDataBaseModel.WorkSchedule" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="ProjectDataBaseModel.FK_Department_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDataBaseModel.FK_TimeSetting_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDataBaseModel.FK_WorkSchedule_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDataBaseModel.FK_Employee_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDataBaseModel.FK_WorkSchedule_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectDataBaseModel.FK_WorkDay_Employee" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
