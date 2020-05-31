@@ -11,11 +11,8 @@ export class CompaniesService {
   constructor(private http: HttpClient) {}
 
   getCurrentCompany(companyId: number) {
-    return this.http
-      .get<Company>(environment.apiURL + "/companies/" + companyId)
-      .subscribe((data) => {
-        console.log(data);
-        this.currentCompany = data;
-      });
+    return this.http.get<Company>(
+      environment.apiURL + "/companies/" + companyId
+    );
   }
 }

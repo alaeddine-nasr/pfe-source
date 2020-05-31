@@ -1,12 +1,13 @@
-export interface Company {
-  id: number;
-  companyLegalName: string;
-  address: string;
-  city: string;
-  state: string;
-  postalCode: number;
-  country: string;
-  dateOfFormation: string;
-  fiscalYearStart: number;
-  payrollFrequency: string;
+export class Company {
+  constructor() {}
+  Id: number;
+  CompanyLegalName: string;
+  Address: string;
+  City: string;
+  State: string;
+  PostalCode: number;
+  Country: string;
+  DateOfFormation: string;
+  FiscalYearStart: number;
+  PayrollFrequency: string;
 }

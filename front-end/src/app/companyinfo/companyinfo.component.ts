@@ -8,14 +8,14 @@ import { Company } from "./company.model";
   templateUrl: "./companyinfo.component.html",
   styleUrls: ["./companyinfo.component.css"],
 })
-export class CompanyinfoComponent extends ConfigbodyComponent
-  implements OnInit {
+export class CompanyinfoComponent implements OnInit {
   company: Company;
   constructor(private companiesService: CompaniesService) {
-    super(companiesService);
-    this.companiesService = companiesService;
-    this.company = this.companiesService.currentCompany;
+    this.company = new Company();
   }
-
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.companiesService.getCurrentCompany(1).subscribe((company: Company) => {
+      this.company = company;
+    });
+  }
 }
