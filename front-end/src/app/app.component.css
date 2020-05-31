@@ -1,5 +1,18 @@
-body { 
-    background-color:#F1F2E4; 
-    padding-top: 30px;
+body {
+  background-color: #f1f2e4;
+  padding-top: 30px;
 }
-
+.container {
+  background-color: white !important;
+  margin-right: 2%;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #c0fafc;
+  border-width: 1.5px;
+  max-width: 1380px;
+  height: max-content;
+  box-shadow: 0 2px 25px 0 rgba(110, 130, 208, 0.18);
+}
+.side-nav {
+  margin-right: 20px;
+}

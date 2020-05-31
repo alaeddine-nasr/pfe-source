@@ -1,16 +1,9 @@
-<router-outlet  name="navbar"> </router-outlet>  
-
-
-
+<app-nav></app-nav>
 <body>
-  
-<div class=" container-fluid">
-
-    <router-outlet></router-outlet> 
-
-
-        </div>   
+  <div class="container-fluid">
+    <div class="row">
+      <app-secondnav class="col-md-2 side-nav"></app-secondnav>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </body>
-
-
-

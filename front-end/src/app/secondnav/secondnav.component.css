@@ -1,24 +1,116 @@
-.navbar-brand{
-    max-height: 80px;
-    height: 50px;
+.navbar-brand {
+  max-height: 80px;
+  height: 50px;
 }
 
-
-.dropdown{
-    width: 120px;
-    margin-right: 40px;
+.dropdown {
+  width: 120px;
+  margin-right: 40px;
 }
 
-.divider{
-    color: cornflowerblue;
+.divider {
+  color: cornflowerblue;
 }
 
-hr.style1{
-    border-top: 2px solid #3DB3FA;
-    margin-left: 4px;
-    margin-right: 4px;}
+hr.style1 {
+  border-top: 2px solid #3db3fa;
+  margin-left: 4px;
+  margin-right: 4px;
+}
 
-    .navbar-brand{
-        padding-bottom: 10px;
-    }
-    
+.navbar-brand {
+  padding-bottom: 10px;
+}
+.container {
+  background-color: white !important;
+
+  margin-right: 2%;
+
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #c0fafc;
+  border-width: 1.5px;
+
+  max-width: 1380px;
+  height: max-content;
+
+  box-shadow: 0 2px 25px 0 rgba(110, 130, 208, 0.18);
+}
+
+.container-fluid {
+  background-color: white !important;
+
+  padding: 0 !important ;
+  padding-right: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+  margin-right: 40px;
+
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #c0fafc;
+  border-width: 1.5px;
+
+  height: 600px;
+
+  box-shadow: 0 2px 25px 0 rgba(110, 130, 208, 0.18);
+}
+hr.style1 {
+  border-top: 3px solid #c0fafc;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+h4 {
+  color: royalblue;
+}
+.card,
+.card-header {
+  background-color: white !important;
+  border-color: #c0fafc;
+
+  border-top-color: slateblue;
+  border: royalblue;
+  border-radius: 15px;
+}
+
+.card-header {
+  height: 35px;
+}
+.card {
+  box-shadow: 0 2px 25px 0 rgba(110, 130, 208, 0.18);
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #c0fafc;
+}
+
+.card-body {
+  background: white;
+  border-radius: 20px;
+}
+
+hr.style1 {
+  border-top: 2px solid #c0fafc;
+}
+
+.btn-link::after {
+  border-radius: 20px;
+  content: "\2212";
+  width: 35px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  right: 25px;
+  top: 3px;
+  position: absolute;
+}
+
+.btn-link.collapsed::after {
+  content: "\002B";
+  border-radius: 20px;
+}
+
+a:hover {
+  background-color: whitesmoke;
+}
