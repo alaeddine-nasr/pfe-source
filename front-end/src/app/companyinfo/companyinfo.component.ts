@@ -30,11 +30,12 @@ export class CompanyinfoComponent implements OnInit {
       // keyboard: false,
       // backdrop: 'static'
     });
-    modalRef.componentInstance.companyId = this.company.companyId;
+    modalRef.componentInstance.companyId = this.company.CompanyID;
     modalRef.result.then(
       (result) => {
-        console.log(result);
-      },
+        this.companiesService.getCurrentCompany(this.company.CompanyID).subscribe((company: Company) => {
+          this.company = company;
+        });      },
       (reason) => {}
     );
   }

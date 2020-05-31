@@ -19,7 +19,11 @@ company: Company;
     this.companiesService.getCurrentCompany(1).subscribe((company: Company) => {
       this.company = company;
     });  }
-  closeModal(saveCompany) {
-    this.activeModal.close(saveCompany);
+  closeModal(result) {
+    this.activeModal.close(result);
+  }
+  saveCompany(){
+    this.companiesService.updateCompany(this.company);
+    this.closeModal('saveCompany');
   }
 }
