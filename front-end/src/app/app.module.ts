@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -17,6 +18,7 @@ import { CalanderviewComponent } from "./calanderview/calanderview.component";
 import { FullCalendarModule } from "@fullcalendar/angular";
 import { ClockinComponent } from "./clockin/clockin.component";
 import { TimesheetComponent } from "./timesheet/timesheet.component";
+import { CompanyDetailsComponent } from "./company-details/company-details.component";
 
 @NgModule({
   declarations: [
@@ -32,12 +34,14 @@ import { TimesheetComponent } from "./timesheet/timesheet.component";
     EmployeesAttendanceComponent,
     ClockinComponent,
     TimesheetComponent,
+    CompanyDetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FullCalendarModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: "", component: NavComponent, outlet: "navbar" },
       { path: "", component: ConfigbodyComponent },
@@ -61,6 +65,7 @@ import { TimesheetComponent } from "./timesheet/timesheet.component";
     ]),
   ],
   providers: [],
+  entryComponents: [CompanyDetailsComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
