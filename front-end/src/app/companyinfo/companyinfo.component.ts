@@ -30,7 +30,7 @@ export class CompanyinfoComponent implements OnInit {
       // keyboard: false,
       // backdrop: 'static'
     });
-    modalRef.componentInstance.company = this.company;
+    modalRef.componentInstance.companyId = this.company.companyId;
     modalRef.result.then(
       (result) => {
         console.log(result);

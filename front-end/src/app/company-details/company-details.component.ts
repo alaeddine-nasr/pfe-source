@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
 import { Company } from "../companyinfo/company.model";
+import { CompaniesService } from '../companyinfo/companies.service';
 
 @Component({
   selector: "app-company-details",
@@ -8,13 +9,16 @@ import { Company } from "../companyinfo/company.model";
   styleUrls: ["./company-details.component.css"],
 })
 export class CompanyDetailsComponent implements OnInit {
-  @Input() company;
-
-  constructor(public activeModal: NgbActiveModal) {}
+  @Input() companyId;
+company: Company;
+  constructor(public activeModal: NgbActiveModal, private companiesService: CompaniesService,) {
+    this.company = new Company();
+  }
 
   ngOnInit(): void {
-    console.log(this.company);
-  }
+    this.companiesService.getCurrentCompany(1).subscribe((company: Company) => {
+      this.company = company;
+    });  }
   closeModal(saveCompany) {
     this.activeModal.close(saveCompany);
   }
