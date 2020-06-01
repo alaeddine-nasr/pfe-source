@@ -1,182 +1,176 @@
-  <!-- Modal -->
+
+        <div class="modal-header">
+          <h4>Edit company info</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
   
-  <div class="modal-dialog  modal-lg">
-    <div
-      class="modal-content"
-      style="
-        border-color: #c0fafc;
-        border-style: solid;
-        border-radius: 20px;
-      "
-    >
-      <div class="modal-header">
-        <h4>Edit company info</h4>
-        <button type="button" class="close" data-dismiss="modal">
-          &times;
-        </button>
-      </div>
-      <div class="modal-body" >
-        <div class="form-group row">
-          <label
-            for="inputPassword"
-            class="col-sm-4 col-form-label"
-            style="font-size: 14px; color: rgb(180, 172, 172);"
-            >Company legal name :
-          </label>
-          <div class="col-sm-5">
-            <input
-          type="text"
-          class="form-control"
-          [(ngModel)]="company.CompanyLegalName"
-        />
-          </div>
-        </div>
-      
-        <div class="form-group row">
-          <label
-            for="inputPassword"
-            class="col-sm-4 col-form-label"
-            style="font-size: 14px; color: rgb(180, 172, 172);"
-            >Address :
-          </label>
-          <div class="col-sm-5">
-            <input
-          type="text"
-          class="form-control"
-          [(ngModel)]="company.Address"
-        />
-          </div>
-        </div>
-      
-      
-        <div class="form-group row">
-          <label
-            for="inputPassword"
-            class="col-sm-4 col-form-label"
-            style="font-size: 14px; color: rgb(180, 172, 172);"
-            >City :
-          </label>
-          <div class="col-sm-5">
-            <input
-          type="text"
-          class="form-control"
-          [(ngModel)]="company.City"
-        />
-          </div>
-        </div>
-      
-        <div class="form-group row">
-          <label
-            for="inputPassword"
-            class="col-sm-4 col-form-label"
-            style="font-size: 14px; color: rgb(180, 172, 172);"
-            >State :
-          </label>
-          <div class="col-sm-5">
-            <input
-          type="text"
-          class="form-control"
-          [(ngModel)]="company.State"
-        />
-          </div>
-        </div>
-        
-        <div class="form-group row">
-          <label
-            for="inputPassword"
-            class="col-sm-4 col-form-label"
-            style="font-size: 14px; color: rgb(180, 172, 172);"
-            >Postal/Zip Code :
-          </label>
-          <div class="col-sm-5">
-            <input
-          type="text"
-          class="form-control"
-          [(ngModel)]="company.PostalCode"
-        />
-          </div>
-        </div>
-      
-      
-        <div class="form-group row">
-          <label
-            for="inputPassword"
-            class="col-sm-4 col-form-label"
-            style="font-size: 14px; color: rgb(180, 172, 172);"
-            >Country :
-          </label>
-          
-          <div class="col-sm-5">
-            <select
-              class="form-control form-control-sm"
-              style="height: 25px;"
-              [(ngModel)]="company.Country"
-            >
-              <option>Tunisia</option>
-              <option>Lybia</option>
-              <option>United states</option>
-              <option>United kingdom</option>
-              <option>France</option>
-              <option>Russia</option>
-            </select>
-          </div>
-        </div>
-      
-        <div class="form-group row">
-          <label
-            for="inputPassword"
-            class="col-sm-4 col-form-label"
-            style="font-size: 14px; color: rgb(180, 172, 172);"
-            >Fiscal Year Starts :
-          </label>
-          <div class="col-sm-5">
-            <input
-          type="text"
-          class="form-control"
-          [(ngModel)]="company.FiscalYearStart"
-        />
-          </div>
-        </div>
-      
-        <div class="form-group row">
-          <label
-            for="inputPassword"
-            class="col-sm-4 col-form-label"
-            style="font-size: 14px; color: rgb(180, 172, 172);"
-            >Date Of Formation :
-          </label>
-          <div class="col-sm-5">
-            <input
-          type="text"
-          class="form-control"
-          [(ngModel)]="company.DateOfFormation"
-        />
-          </div>
-        </div>
-      <div class="modal-footer">
-        <div>
-          <div class="checkbox ml-4 mb-4">
+
+        <div class="modal-body" >
+          <div class="form-group row">
             <label
-              ><input type="checkbox" value="" /> I reviewed and confirmed
-              the changes
+              for="inputPassword"
+              class="col-sm-4 col-form-label"
+              style="font-size: 14px; color: rgb(180, 172, 172);"
+              >Company legal name :
             </label>
+            <div class="col-sm-5">
+              <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="company.CompanyLegalName"
+          />
+            </div>
+          </div>
+        
+          <div class="form-group row">
+            <label
+              for="inputPassword"
+              class="col-sm-4 col-form-label"
+              style="font-size: 14px; color: rgb(180, 172, 172);"
+              >Address :
+            </label>
+            <div class="col-sm-5">
+              <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="company.Address"
+          />
+            </div>
+          </div>
+        
+        
+          <div class="form-group row">
+            <label
+              for="inputPassword"
+              class="col-sm-4 col-form-label"
+              style="font-size: 14px; color: rgb(180, 172, 172);"
+              >City :
+            </label>
+            <div class="col-sm-5">
+              <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="company.City"
+          />
+            </div>
+          </div>
+        
+          <div class="form-group row">
+            <label
+              for="inputPassword"
+              class="col-sm-4 col-form-label"
+              style="font-size: 14px; color: rgb(180, 172, 172);"
+              >State :
+            </label>
+            <div class="col-sm-5">
+              <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="company.State"
+          />
+            </div>
+          </div>
+          
+          <div class="form-group row">
+            <label
+              for="inputPassword"
+              class="col-sm-4 col-form-label"
+              style="font-size: 14px; color: rgb(180, 172, 172);"
+              >Postal/Zip Code :
+            </label>
+            <div class="col-sm-5">
+              <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="company.PostalCode"
+          />
+            </div>
+          </div>
+        
+        
+          <div class="form-group row">
+            <label
+              for="inputPassword"
+              class="col-sm-4 col-form-label"
+              style="font-size: 14px; color: rgb(180, 172, 172);"
+              >Country :
+            </label>
+            
+            <div class="col-sm-5">
+              <select
+                class="form-control form-control-sm"
+                style="height: 25px;"
+                [(ngModel)]="company.Country"
+              >
+                <option>Tunisia</option>
+                <option>Lybia</option>
+                <option>United states</option>
+                <option>United kingdom</option>
+                <option>France</option>
+                <option>Russia</option>
+              </select>
+            </div>
+          </div>
+        
+          <div class="form-group row">
+            <label
+              for="inputPassword"
+              class="col-sm-4 col-form-label"
+              style="font-size: 14px; color: rgb(180, 172, 172);"
+              >Fiscal Year Starts :
+            </label>
+            <div class="col-sm-5">
+              <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="company.FiscalYearStart"
+          />
+            </div>
+          </div>
+        
+          <div class="form-group row">
+            <label
+              for="inputPassword"
+              class="col-sm-4 col-form-label"
+              style="font-size: 14px; color: rgb(180, 172, 172);"
+              >Date Of Formation :
+            </label>
+            <div class="col-sm-5">
+              <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="company.DateOfFormation"
+          />
+            </div>
+          </div>
+  
+ 
+          <div class="modal-footer">
+            <div style="margin-right: 600px;">
+              <div class="checkbox ml-4 mb-4">
+                <label
+                  ><input type="checkbox" value="" /> I reviewed and confirmed
+                  the changes
+                </label>
+              </div>
+            </div>
+    <button
+        type="button"
+        class="btn btn-primary"
+        (click)="saveCompany()"
+      >
+        Save   </button>
+            <span></span>
+     <button
+        type="button"
+        class="btn btn-secondary"
+        data-dismiss="modal"
+        (click)="closeModal('close')"
+      >
+              Cancel
+            </button>
           </div>
         </div>
-<button
-    type="button"
-    class="btn btn-primary"
-    (click)="saveCompany()"
-  >
-    Save   </button>
-        <span></span>
- <button
-    type="button"
-    class="btn btn-secondary"
-    data-dismiss="modal"
-    (click)="closeModal('close')"
-  >
-          Cancel
-        </button>
-      </div>
-    </div>
-  </div>
+    
