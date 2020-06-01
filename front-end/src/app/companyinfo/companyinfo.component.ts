@@ -27,8 +27,7 @@ export class CompanyinfoComponent implements OnInit {
     const modalRef = this.modalService.open(CompanyDetailsComponent, {
       scrollable: true,
       windowClass: "",
-      // keyboard: false,
-      // backdrop: 'static'
+      
     });
     modalRef.componentInstance.companyId = this.company.CompanyID;
     modalRef.result.then(
