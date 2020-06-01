@@ -10,12 +10,16 @@ import { CompaniesService } from '../companyinfo/companies.service';
 })
 export class CompanyDetailsComponent implements OnInit {
   @Input() companyId;
+  toggleButton: boolean = true;
+
 company: Company;
+
   constructor(public activeModal: NgbActiveModal, private companiesService: CompaniesService,) {
     this.company = new Company();
   }
 
   ngOnInit(): void {
+    
     this.companiesService.getCurrentCompany(1).subscribe((company: Company) => {
       this.company = company;
     });  }
@@ -25,5 +29,6 @@ company: Company;
   saveCompany(){
     this.companiesService.updateCompany(this.company);
     this.closeModal('saveCompany');
+  
   }
 }

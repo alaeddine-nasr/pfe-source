@@ -150,15 +150,18 @@
           <div class="modal-footer">
             <div style="margin-right: 600px;">
               <div class="checkbox ml-4 mb-4">
+                <input type="checkbox" name="" value="" 
+                (click)='toggleButton = !toggleButton' >
                 <label
-                  ><input type="checkbox" value="" /> I reviewed and confirmed
+                  > I reviewed and confirmed
                   the changes
                 </label>
               </div>
             </div>
     <button
+    [disabled]='toggleButton'
         type="button"
-        class="btn btn-primary"
+        class="btn btn-primary "
         (click)="saveCompany()"
       >
         Save   </button>
