@@ -13,7 +13,8 @@ using ApexiaHR_Pfe.Models;
 
 namespace ApexiaHR_Pfe.Controllers
 {
-    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
+
+
     public class CompaniesController : ApiController
     {
         private ProjectDataBaseEntities db = new ProjectDataBaseEntities();
