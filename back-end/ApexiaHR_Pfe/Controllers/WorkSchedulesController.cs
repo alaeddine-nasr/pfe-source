@@ -78,7 +78,7 @@ namespace ApexiaHR_Pfe.Controllers
             {
                 return BadRequest(ModelState);
             }
-            workSchedule.WorkScheduleID = new int();
+
             db.WorkSchedule.Add(workSchedule);
             db.SaveChanges();
 

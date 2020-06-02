@@ -7,14 +7,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using ApexiaHR_Pfe.Models;
 
 namespace ApexiaHR_Pfe.Controllers
 {
-
-
     public class CompaniesController : ApiController
     {
         private ProjectDataBaseEntities db = new ProjectDataBaseEntities();
@@ -81,7 +78,7 @@ namespace ApexiaHR_Pfe.Controllers
             {
                 return BadRequest(ModelState);
             }
-            company.CompanyID = new int();
+
             db.Company.Add(company);
             db.SaveChanges();
 

@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\ziedg\pfe-source\back-end\ApexiaHR_Pfe\Models\DBmobel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Presto96\source\repos\ApexiaHR_Pfe\ApexiaHR_Pfe\Models\DBmobel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

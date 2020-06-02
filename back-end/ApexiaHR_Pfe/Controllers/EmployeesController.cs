@@ -78,7 +78,7 @@ namespace ApexiaHR_Pfe.Controllers
             {
                 return BadRequest(ModelState);
             }
-            employee.EmployeeID = new int();
+
             db.Employee.Add(employee);
             db.SaveChanges();
 

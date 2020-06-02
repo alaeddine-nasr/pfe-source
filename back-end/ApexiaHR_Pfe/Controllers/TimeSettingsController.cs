@@ -78,7 +78,7 @@ namespace ApexiaHR_Pfe.Controllers
             {
                 return BadRequest(ModelState);
             }
-            timeSetting.TimeSettingID = new int();
+
             db.TimeSetting.Add(timeSetting);
             db.SaveChanges();
 

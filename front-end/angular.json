@@ -75,6 +75,7 @@
           "configurations": {
             "production": {
               "browserTarget": "PFE:build:production"
+
             }
           }
         },

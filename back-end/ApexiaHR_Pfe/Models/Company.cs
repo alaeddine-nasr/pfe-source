@@ -30,7 +30,7 @@ namespace ApexiaHR_Pfe.Models
         public Nullable<int> PostalCode { get; set; }
         public string Country { get; set; }
         public string DateOfFormation { get; set; }
-        public short FiscalYearStart { get; set; }
+        public string FiscalYearStart { get; set; }
         public string PayrollFrequency { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
