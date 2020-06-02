@@ -31,12 +31,10 @@ export class CompanyinfoComponent implements OnInit {
     });
     modalRef.componentInstance.companyId = this.company.CompanyID;
     modalRef.result.then(() => {
-     
         this.companiesService.getCurrentCompany(this.company.CompanyID).subscribe((company: Company) => {
           this.company = company;
-        });      },
-      () => {
-        
+        }); },
+      () => { 
       }
     );
   }
