@@ -26,17 +26,18 @@ export class CompanyinfoComponent implements OnInit {
   }
   openCompanyDetails() {
     const modalRef = this.modalService.open(CompanyDetailsComponent, {
-    
-     
+  
       size: <any>'xl',
     });
     modalRef.componentInstance.companyId = this.company.CompanyID;
-    modalRef.result.then(
-      () => {
+    modalRef.result.then(() => {
+     
         this.companiesService.getCurrentCompany(this.company.CompanyID).subscribe((company: Company) => {
           this.company = company;
         });      },
-      () => {}
+      () => {
+        
+      }
     );
   }
 }

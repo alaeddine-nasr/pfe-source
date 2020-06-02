@@ -14,7 +14,7 @@ export class CompanyDetailsComponent implements OnInit {
 
 company: Company;
 
-  constructor(public activeModal: NgbActiveModal, private companiesService: CompaniesService,) {
+  constructor( public activeModal: NgbActiveModal, private companiesService: CompaniesService ) {
     this.company = new Company();
   }
 
@@ -29,6 +29,6 @@ company: Company;
   saveCompany(){
     this.companiesService.updateCompany(this.company);
     this.closeModal('saveCompany');
-  
+    window.location.reload();
   }
 }

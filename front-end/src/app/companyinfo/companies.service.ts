@@ -20,6 +20,7 @@ export class CompaniesService {
   public updateCompany(company: Company) {
     let endPoints = "/companies/"+company.CompanyID;
     this.http.put(environment.apiURL + endPoints , company).subscribe(data => {
+      
       console.log(data);
     });
   }
