@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiURL: "https://apexiahrserviceprod.azurewebsites.net/api",
+  apiURL: "https://project-apexia20200604045612.azurewebsites.net/api",
 };
 
 /*

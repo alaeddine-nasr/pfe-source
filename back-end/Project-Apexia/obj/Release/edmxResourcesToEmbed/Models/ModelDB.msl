@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="Model.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyLegalName" ColumnName="CompanyLegalName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="DateOfFormation" ColumnName="DateOfFormation" />
+          <ScalarProperty Name="FiscalYearStart" ColumnName="FiscalYearStart" />
+          <ScalarProperty Name="PayrollFrequency" ColumnName="PayrollFrequency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="Model.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="Model.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TimeSettings">
+      <EntityTypeMapping TypeName="Model.TimeSetting">
+        <MappingFragment StoreEntitySet="TimeSetting">
+          <ScalarProperty Name="Attendance" ColumnName="Attendance" />
+          <ScalarProperty Name="EmployeeBreak" ColumnName="EmployeeBreak" />
+          <ScalarProperty Name="WeekendOnAttendanceSheet" ColumnName="WeekendOnAttendanceSheet" />
+          <ScalarProperty Name="MaxLateArrivals" ColumnName="MaxLateArrivals" />
+          <ScalarProperty Name="HighlightLateArrivals" ColumnName="HighlightLateArrivals" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="TimeSettingID" ColumnName="TimeSettingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkDays">
+      <EntityTypeMapping TypeName="Model.WorkDay">
+        <MappingFragment StoreEntitySet="WorkDay">
+          <ScalarProperty Name="WorkDayID" ColumnName="WorkDayID" />
+          <ScalarProperty Name="Checkin" ColumnName="Checkin" />
+          <ScalarProperty Name="Checkout" ColumnName="Checkout" />
+          <ScalarProperty Name="Breaks" ColumnName="Breaks" />
+          <ScalarProperty Name="Lunch" ColumnName="Lunch" />
+          <ScalarProperty Name="TotalHoursWorked" ColumnName="TotalHoursWorked" />
+          <ScalarProperty Name="OvetimeHours" ColumnName="OvetimeHours" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkSchedules">
+      <EntityTypeMapping TypeName="Model.WorkSchedule">
+        <MappingFragment StoreEntitySet="WorkSchedule">
+          <ScalarProperty Name="WorkScheduleID" ColumnName="WorkScheduleID" />
+          <ScalarProperty Name="WeekendDays" ColumnName="WeekendDays" />
+          <ScalarProperty Name="HoursPerDay" ColumnName="HoursPerDay" />
+          <ScalarProperty Name="WeekStarts" ColumnName="WeekStarts" />
+          <ScalarProperty Name="NumberWorkDays" ColumnName="NumberWorkDays" />
+          <ScalarProperty Name="DayStarts" ColumnName="DayStarts" />
+          <ScalarProperty Name="Breaks" ColumnName="Breaks" />
+          <ScalarProperty Name="Lunch" ColumnName="Lunch" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

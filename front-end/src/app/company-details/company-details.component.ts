@@ -29,6 +29,5 @@ company: Company;
   saveCompany(){
     this.companiesService.updateCompany(this.company);
     this.closeModal('saveCompany');
-    window.location.reload();
   }
 }

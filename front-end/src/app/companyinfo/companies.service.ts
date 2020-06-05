@@ -13,12 +13,12 @@ export class CompaniesService {
 
   getCurrentCompany(companyId: number) {
     return this.http.get<Company>(
-      environment.apiURL + "/companies/" + companyId
+      environment.apiURL + "/Companies/" + companyId
     );
   }
 
   public updateCompany(company: Company) {
-    let endPoints = "/companies/"+company.CompanyID;
+    let endPoints = "/Companies/"+company.CompanyID;
     this.http.put(environment.apiURL + endPoints , company).subscribe(data => {
       
       console.log(data);
