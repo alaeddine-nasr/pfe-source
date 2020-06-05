@@ -12,13 +12,14 @@ import { CompanyinfoComponent } from "./companyinfo/companyinfo.component";
 import { TimeGeneralSettingsComponent } from "./time-general-settings/time-general-settings.component";
 import { WorkandscheduleComponent } from "./workandschedule/workandschedule.component";
 import { MyattendanceComponent } from "./myattendance/myattendance.component";
-import { SecondnavComponent } from "./secondnav/secondnav.component";
+import { SecondnavComponent } from "./sidenav/sidenav.component";
 import { EmployeesAttendanceComponent } from "./employees-attendance/employees-attendance.component";
 import { CalanderviewComponent } from "./calanderview/calanderview.component";
 import { FullCalendarModule } from "@fullcalendar/angular";
 import { ClockinComponent } from "./clockin/clockin.component";
 import { TimesheetComponent } from "./timesheet/timesheet.component";
 import { CompanyDetailsComponent } from "./company-details/company-details.component";
+import { SecondnavbarComponent } from './secondnavbar/secondnavbar.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CompanyDetailsComponent } from "./company-details/company-details.compo
     ClockinComponent,
     TimesheetComponent,
     CompanyDetailsComponent,
+    SecondnavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,13 +55,13 @@ import { CompanyDetailsComponent } from "./company-details/company-details.compo
       { path: "clockin", component: ClockinComponent },
       { path: "timesheet", component: TimesheetComponent },
       { path: "nav1", component: NavComponent, outlet: "navbar" },
-      { path: "nav2", component: SecondnavComponent, outlet: "navbar" },
+      { path: "nav2", component: SecondnavbarComponent, outlet: "navbar" },
 
       {
         path: "employeesattendance",
         component: EmployeesAttendanceComponent,
         children: [
-          { path: "nav2", component: SecondnavComponent, outlet: "navbar" },
+          { path: "nav2", component: SecondnavbarComponent, outlet: "navbar" },
         ],
       },
     ]),
