@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiURL: "https://project-apexia20200604045612.azurewebsites.net/api",
+  apiURL: "https://localhost:44368//api",
 };
 
 /*
@@ -15,3 +15,10 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+
+
+
+
+

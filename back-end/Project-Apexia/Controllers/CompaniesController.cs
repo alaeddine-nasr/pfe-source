@@ -6,16 +6,18 @@ using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
 using Project_Apexia.Models;
+using System.Web.Http.Cors;
 
 namespace Project_Apexia.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
+
     public class CompaniesController : ApiController
     {
-        private Entities db = new Entities();
+        private PFEDBEntities db = new PFEDBEntities();
 
         // GET: api/Companies
         public IQueryable<Company> GetCompanies()
@@ -25,9 +27,9 @@ namespace Project_Apexia.Controllers
 
         // GET: api/Companies/5
         [ResponseType(typeof(Company))]
-        public async Task<IHttpActionResult> GetCompany(int id)
+        public IHttpActionResult GetCompany(int id)
         {
-            Company company = await db.Companies.FindAsync(id);
+            Company company = db.Companies.Find(id);
             if (company == null)
             {
                 return NotFound();
@@ -38,7 +40,7 @@ namespace Project_Apexia.Controllers
 
         // PUT: api/Companies/5
         [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutCompany(int id, Company company)
+        public IHttpActionResult PutCompany(int id, Company company)
         {
             if (!ModelState.IsValid)
             {
@@ -54,7 +56,7 @@ namespace Project_Apexia.Controllers
 
             try
             {
-                await db.SaveChangesAsync();
+                db.SaveChanges();
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -73,7 +75,7 @@ namespace Project_Apexia.Controllers
 
         // POST: api/Companies
         [ResponseType(typeof(Company))]
-        public async Task<IHttpActionResult> PostCompany(Company company)
+        public IHttpActionResult PostCompany(Company company)
         {
             if (!ModelState.IsValid)
             {
@@ -81,23 +83,23 @@ namespace Project_Apexia.Controllers
             }
 
             db.Companies.Add(company);
-            await db.SaveChangesAsync();
+            db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = company.CompanyID }, company);
         }
 
         // DELETE: api/Companies/5
         [ResponseType(typeof(Company))]
-        public async Task<IHttpActionResult> DeleteCompany(int id)
+        public IHttpActionResult DeleteCompany(int id)
         {
-            Company company = await db.Companies.FindAsync(id);
+            Company company = db.Companies.Find(id);
             if (company == null)
             {
                 return NotFound();
             }
 
             db.Companies.Remove(company);
-            await db.SaveChangesAsync();
+            db.SaveChanges();
 
             return Ok(company);
         }

@@ -13,16 +13,13 @@ namespace Project_Apexia.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities : DbContext
+    public partial class PFEDBEntities : DbContext
     {
-        public Entities()
-            : base("name=Entities")
-
+        public PFEDBEntities()
+            : base("name=PFEDBEntities")
         {
-            base.Configuration.ProxyCreationEnabled = false;
-
         }
-
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

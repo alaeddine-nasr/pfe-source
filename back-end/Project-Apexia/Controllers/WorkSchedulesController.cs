@@ -14,7 +14,7 @@ namespace Project_Apexia.Controllers
 {
     public class WorkSchedulesController : ApiController
     {
-        private Entities db = new Entities();
+        private PFEDBEntities db = new PFEDBEntities();
 
         // GET: api/WorkSchedules
         public IQueryable<WorkSchedule> GetWorkSchedules()

@@ -12,7 +12,7 @@ import { CompanyinfoComponent } from "./companyinfo/companyinfo.component";
 import { TimeGeneralSettingsComponent } from "./time-general-settings/time-general-settings.component";
 import { WorkandscheduleComponent } from "./workandschedule/workandschedule.component";
 import { MyattendanceComponent } from "./myattendance/myattendance.component";
-import { SecondnavComponent } from "./sidenav/sidenav.component";
+import { sidenavComponent } from "./sidenav/sidenav.component";
 import { EmployeesAttendanceComponent } from "./employees-attendance/employees-attendance.component";
 import { CalanderviewComponent } from "./calanderview/calanderview.component";
 import { FullCalendarModule } from "@fullcalendar/angular";
@@ -31,7 +31,7 @@ import { SecondnavbarComponent } from './secondnavbar/secondnavbar.component';
     TimeGeneralSettingsComponent,
     WorkandscheduleComponent,
     MyattendanceComponent,
-    SecondnavComponent,
+    sidenavComponent,
     EmployeesAttendanceComponent,
     ClockinComponent,
     TimesheetComponent,
@@ -56,6 +56,7 @@ import { SecondnavbarComponent } from './secondnavbar/secondnavbar.component';
       { path: "timesheet", component: TimesheetComponent },
       { path: "nav1", component: NavComponent, outlet: "navbar" },
       { path: "nav2", component: SecondnavbarComponent, outlet: "navbar" },
+      { path: "", component: sidenavComponent, outlet: "sidenav" },
 
       {
         path: "employeesattendance",

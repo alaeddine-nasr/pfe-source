@@ -14,7 +14,7 @@ namespace Project_Apexia.Controllers
 {
     public class WorkDaysController : ApiController
     {
-        private Entities db = new Entities();
+        private PFEDBEntities db = new PFEDBEntities();
 
         // GET: api/WorkDays
         public IQueryable<WorkDay> GetWorkDays()

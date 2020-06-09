@@ -14,7 +14,7 @@ namespace Project_Apexia.Controllers
 {
     public class DepartmentsController : ApiController
     {
-        private Entities db = new Entities();
+        private PFEDBEntities db = new PFEDBEntities();
 
         // GET: api/Departments
         public IQueryable<Department> GetDepartments()

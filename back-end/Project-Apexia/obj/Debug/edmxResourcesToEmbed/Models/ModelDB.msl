@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+  <EntityContainerMapping StorageEntityContainer="PFEDBModelStoreContainer" CdmEntityContainer="PFEDBEntities">
     <EntitySetMapping Name="Companies">
-      <EntityTypeMapping TypeName="Model.Company">
+      <EntityTypeMapping TypeName="PFEDBModel.Company">
         <MappingFragment StoreEntitySet="Company">
           <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
           <ScalarProperty Name="CompanyLegalName" ColumnName="CompanyLegalName" />
@@ -18,7 +18,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Departments">
-      <EntityTypeMapping TypeName="Model.Department">
+      <EntityTypeMapping TypeName="PFEDBModel.Department">
         <MappingFragment StoreEntitySet="Department">
           <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
           <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
@@ -27,7 +27,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Employees">
-      <EntityTypeMapping TypeName="Model.Employee">
+      <EntityTypeMapping TypeName="PFEDBModel.Employee">
         <MappingFragment StoreEntitySet="Employee">
           <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -39,7 +39,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TimeSettings">
-      <EntityTypeMapping TypeName="Model.TimeSetting">
+      <EntityTypeMapping TypeName="PFEDBModel.TimeSetting">
         <MappingFragment StoreEntitySet="TimeSetting">
           <ScalarProperty Name="Attendance" ColumnName="Attendance" />
           <ScalarProperty Name="EmployeeBreak" ColumnName="EmployeeBreak" />
@@ -52,7 +52,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="WorkDays">
-      <EntityTypeMapping TypeName="Model.WorkDay">
+      <EntityTypeMapping TypeName="PFEDBModel.WorkDay">
         <MappingFragment StoreEntitySet="WorkDay">
           <ScalarProperty Name="WorkDayID" ColumnName="WorkDayID" />
           <ScalarProperty Name="Checkin" ColumnName="Checkin" />
@@ -68,7 +68,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="WorkSchedules">
-      <EntityTypeMapping TypeName="Model.WorkSchedule">
+      <EntityTypeMapping TypeName="PFEDBModel.WorkSchedule">
         <MappingFragment StoreEntitySet="WorkSchedule">
           <ScalarProperty Name="WorkScheduleID" ColumnName="WorkScheduleID" />
           <ScalarProperty Name="WeekendDays" ColumnName="WeekendDays" />

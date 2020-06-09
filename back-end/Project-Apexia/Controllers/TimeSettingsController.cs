@@ -14,7 +14,7 @@ namespace Project_Apexia.Controllers
 {
     public class TimeSettingsController : ApiController
     {
-        private Entities db = new Entities();
+        private PFEDBEntities db = new PFEDBEntities();
 
         // GET: api/TimeSettings
         public IQueryable<TimeSetting> GetTimeSettings()

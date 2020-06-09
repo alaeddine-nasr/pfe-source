@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.css']
 })
-export class SecondnavComponent implements OnInit {
+export class sidenavComponent implements OnInit {
   logo:string="https://xpo-pro.com/HRexpo/images/themexpert/home/clients/5.png"
   plus:string="https://img.icons8.com/cotton/2x/plus--v1.png"
   bell:string="https://d1nhio0ox7pgb.cloudfront.net/_img/i_collection_png/256x256/plain/bell.png"
